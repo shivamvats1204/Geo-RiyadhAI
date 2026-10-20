@@ -1,8 +1,8 @@
 # City-wide Urbi + Suhail data: loading and verification (2026-10-19/20)
 
-Raw downloads (outside OneDrive): `C:\Users\shiva\urbi_city\` (JSONL, 1.8 GB buildings), `C:\Users\shiva\suhail_city\` (parcels.parquet, rules.csv).
-Converted/tiled store: `C:\Users\shiva\urbi_city\parquet\` (GeoParquet, centroid point + best polygon + all remaining fields as `extra_json`) and
-`C:\Users\shiva\riyadh_city_store\` (0.05-degree tiles; `CityStore.query(layer, bbox)`).
+Raw downloads (under `RIYADHAI_DATA_ROOT`, see `data_preparation.md`): `urbi_city/` (JSONL, 1.8 GB for buildings), `suhail_city/` (parcels.parquet, rules.csv).
+Converted/tiled store: `urbi_city/parquet/` (GeoParquet, centroid point + best polygon + all remaining fields as `extra_json`) and
+`riyadh_city_store/` (0.05-degree tiles; `CityStore.query(layer, bbox)`).
 
 ## Counts (all measured)
 | Layer | Source | Rows | Notes |

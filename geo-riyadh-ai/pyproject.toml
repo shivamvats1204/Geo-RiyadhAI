@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Geo-RiyadhAI: evidence-backed urban intelligence on top of GeoAcquirer."
 readme = "README.md"
 license = { text = "MIT" }
+authors = [{ name = "Shivam Vats" }]
 requires-python = ">=3.11"
 dependencies = [
   "geoacquirer>=0.1.0",

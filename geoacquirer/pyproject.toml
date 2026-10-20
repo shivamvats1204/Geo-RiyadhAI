@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Autonomous, natural-language-driven geospatial data acquisition, normalization and verification agent."
 readme = "README.md"
 license = { text = "MIT" }
+authors = [{ name = "Shivam Vats" }]
 requires-python = ">=3.11"
 dependencies = [
   "pydantic>=2.5",
