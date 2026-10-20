@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geoacquirer"
+version = "0.1.0"
+description = "Autonomous, natural-language-driven geospatial data acquisition, normalization and verification agent."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.5",
+  "shapely>=2.0",
+  "geopandas>=0.14",
+  "pyproj>=3.6",
+  "networkx>=3.1",
+  "pandas>=2.0",
+  "numpy>=1.26",
+  "pyarrow>=14",
+  "duckdb>=1.0",
+  "requests>=2.31",
+  "fastapi>=0.110",
+  "uvicorn>=0.27",
+]
+
+[project.optional-dependencies]
+suhail = ["mapbox-vector-tile", "mercantile", "aiohttp"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+geoacquirer = "geoacquirer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=.pytest_tmp -p no:cacheprovider"
+markers = ["live: needs network access to a public geodata source"]
+
+[tool.ruff]
+line-length = 200
+target-version = "py311"
+extend-exclude = ["reference_notebooks", ".pytest_tmp"]
+
+[tool.ruff.lint]
+select = ["E9", "F", "B006", "B008", "E711", "E712", "E721", "E722"]

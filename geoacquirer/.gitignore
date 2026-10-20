@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.pytest_tmp/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+.ruff_cache/
+runs/
+runs_*/
+*.parquet
+*.jsonl

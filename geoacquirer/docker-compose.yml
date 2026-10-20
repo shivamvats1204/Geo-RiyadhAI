@@ -1,0 +1,15 @@
+# NOTE: not tested in the environment this repo was built in (no Docker available there).
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    env_file: [.env]
+    volumes: ["geoacq-data:/data"]
+  # Optional: PostGIS for users who want persistent spatial tables. No code path in this repo requires it.
+  postgis:
+    image: postgis/postgis:16-3.4
+    profiles: ["postgis"]
+    environment: { POSTGRES_PASSWORD: change-me, POSTGRES_DB: geoacquirer }
+    ports: ["5432:5432"]
+volumes:
+  geoacq-data: {}

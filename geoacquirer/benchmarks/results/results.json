@@ -1,0 +1,335 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "shapely": "2.2.0",
+    "geopandas": "1.2.0"
+  },
+  "city": {
+    "pois": 3168,
+    "parcels": 1296,
+    "segments": 314,
+    "four_way_found": 121,
+    "four_way_truth": 121,
+    "t_junction_found": 44,
+    "t_junction_truth": 44,
+    "grade_separated_crossings_excluded": 1
+  },
+  "tasks": {
+    "01_shops_fourway_not_highway": {
+      "exact_geometry_u0": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 135,
+        "n_truth": 135,
+        "tp": 135
+      },
+      "seconds": 0.156,
+      "with_u10_verified_only": {
+        "precision": 1.0,
+        "recall": 0.4222,
+        "n_pred": 57,
+        "n_truth": 135,
+        "tp": 57
+      },
+      "with_u10_verified_plus_probable": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 135,
+        "n_truth": 135,
+        "tp": 135
+      },
+      "status_counts_u10": {
+        "REJECTED": 2250,
+        "INSUFFICIENT_EVIDENCE": 115,
+        "PROBABLE_MATCH": 78,
+        "VERIFIED_MATCH": 57
+      },
+      "coverage_non_insufficient_u10": 0.954
+    },
+    "01b_positional_noise_sigma8m": {
+      "u=0": {
+        "verified_only": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "n_pred": 144,
+          "n_truth": 135,
+          "tp": 108
+        },
+        "verified_plus_probable": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "n_pred": 144,
+          "n_truth": 135,
+          "tp": 108
+        },
+        "insufficient_fraction": 0.0
+      },
+      "u=10": {
+        "verified_only": {
+          "precision": 0.9444,
+          "recall": 0.3778,
+          "n_pred": 54,
+          "n_truth": 135,
+          "tp": 51
+        },
+        "verified_plus_probable": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "n_pred": 144,
+          "n_truth": 135,
+          "tp": 108
+        },
+        "insufficient_fraction": 0.04
+      },
+      "u=20": {
+        "verified_only": {
+          "precision": 1.0,
+          "recall": 0.0741,
+          "n_pred": 10,
+          "n_truth": 135,
+          "tp": 10
+        },
+        "verified_plus_probable": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "n_pred": 144,
+          "n_truth": 135,
+          "tp": 108
+        },
+        "insufficient_fraction": 0.0972
+      }
+    },
+    "02_commercial_parcels_two_roads": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 228,
+        "n_truth": 228,
+        "tp": 228
+      },
+      "seconds": 0.056
+    },
+    "03_parking_near_shops": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 80,
+        "n_truth": 80,
+        "tp": 80
+      },
+      "seconds": 0.023
+    },
+    "04_warehouses_outside_residential": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 71,
+        "n_truth": 71,
+        "tp": 71
+      },
+      "seconds": 0.047
+    },
+    "05_clinics_600m_by_road_of_hospital": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 41,
+        "n_truth": 41,
+        "tp": 41
+      },
+      "seconds": 0.113
+    },
+    "06_poi_building_association": {
+      "metrics": {
+        "precision": 0.4939,
+        "recall": 0.9758,
+        "n_pred": 652,
+        "n_truth": 330,
+        "tp": 322
+      },
+      "match_types": {
+        "none": 1848,
+        "nearest_within_20m": 366,
+        "contained": 286
+      },
+      "precision_by_match_type": {
+        "contained": {
+          "links": 286,
+          "correct": 247,
+          "precision": 0.8636
+        },
+        "nearest_within_20m": {
+          "links": 366,
+          "correct": 75,
+          "precision": 0.2049
+        }
+      },
+      "note": "shops with no ground-truth building that happen to lie within 20 m of another shop's building count as false links"
+    },
+    "07_multi_constraint": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 70,
+        "n_truth": 70,
+        "tp": 70
+      },
+      "seconds": 1.817
+    },
+    "08_multi_source_dedup": {
+      "pair_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 300,
+        "n_truth": 300,
+        "tp": 300
+      },
+      "rows_before": 3768,
+      "rows_after": 3468,
+      "match_types": {
+        "proximity_and_name": 300
+      },
+      "precision_by_match_type": {
+        "proximity_and_name": {
+          "pairs": 300,
+          "correct": 300,
+          "precision": 1.0
+        }
+      }
+    },
+    "09_missing_evidence_abstains": {
+      "abstention_rate": 1.0,
+      "false_verified": 0,
+      "n": 2500
+    },
+    "10_incomplete_conflicting_data": {
+      "ran_without_error": true,
+      "all_statuses_valid": true,
+      "dedup_with_25pct_names_missing": {
+        "precision": 0.9004,
+        "recall": 0.7233,
+        "n_pred": 241,
+        "n_truth": 300,
+        "tp": 217
+      },
+      "dedup_match_types": {
+        "proximity_and_name": 185,
+        "proximity_and_category_only": 56
+      },
+      "dedup_precision_by_match_type": {
+        "proximity_and_category_only": {
+          "pairs": 56,
+          "correct": 46,
+          "precision": 0.8214
+        },
+        "proximity_and_name": {
+          "pairs": 185,
+          "correct": 171,
+          "precision": 0.9243
+        }
+      }
+    }
+  },
+  "query_compilation": {
+    "n": 20,
+    "exact_ir_match": 20,
+    "success_rate": 1.0,
+    "failures": []
+  },
+  "planner_vs_exhaustive": {
+    "measured_live_layer_seconds": {
+      "connector": 48.4,
+      "building": 869.8,
+      "road": 366.1,
+      "poi": 52.6
+    },
+    "tasks": [
+      {
+        "task": "flagship",
+        "layers_planned": [
+          "connector",
+          "poi",
+          "road"
+        ],
+        "layers_exhaustive": [
+          "poi",
+          "road",
+          "connector",
+          "building",
+          "parcel"
+        ],
+        "est_live_seconds_planned": 467.1,
+        "est_live_seconds_exhaustive": 1336.9
+      },
+      {
+        "task": "parking_near_shops",
+        "layers_planned": [
+          "poi"
+        ],
+        "layers_exhaustive": [
+          "poi",
+          "road",
+          "connector",
+          "building",
+          "parcel"
+        ],
+        "est_live_seconds_planned": 52.6,
+        "est_live_seconds_exhaustive": 1336.9
+      },
+      {
+        "task": "warehouses_outside_residential",
+        "layers_planned": [
+          "parcel",
+          "poi"
+        ],
+        "layers_exhaustive": [
+          "poi",
+          "road",
+          "connector",
+          "building",
+          "parcel"
+        ],
+        "est_live_seconds_planned": 52.6,
+        "est_live_seconds_exhaustive": 1336.9
+      }
+    ],
+    "note": "seconds are the measured first-fetch latency of each Overture layer for the 12x15 km Riyadh bbox; the 'planned' column sums only layers the IR needs"
+  },
+  "index_vs_naive": {
+    "shops": 3306,
+    "road_segments": 45796,
+    "naive_subset": 400,
+    "naive_seconds_subset": 7.163,
+    "indexed_seconds_same_subset": 0.0097,
+    "speedup_x": 737.3,
+    "indexed_seconds_all_shops": 0.088,
+    "naive_extrapolated_all_seconds": 59.2,
+    "max_abs_distance_difference_m": 0.0
+  },
+  "live_flagship_run": {
+    "run": "20261019-141342-e9f951",
+    "status_counts": {
+      "REJECTED": 2579,
+      "INSUFFICIENT_EVIDENCE": 61,
+      "VERIFIED_MATCH": 55,
+      "PROBABLE_MATCH": 37
+    },
+    "verification": {
+      "ok": true,
+      "checked_rows": 453,
+      "checked_leaves": 906,
+      "n_disagreements": 0,
+      "max_abs_distance_error_m": 0.0049
+    },
+    "wall_seconds_this_run": 9.3,
+    "budget": {
+      "requests": 0,
+      "features": 0,
+      "elapsed_s": 9.26
+    },
+    "topology": [
+      "45796 drivable segments, 28599 junction clusters (4027 four-way, 21917 T), 969 grade-separated crossings excluded"
+    ],
+    "overture_release": "2026-09-23.1"
+  }
+}

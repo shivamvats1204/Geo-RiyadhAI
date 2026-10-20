@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riyadhai"
+version = "0.1.0"
+description = "Geo-RiyadhAI: evidence-backed urban intelligence on top of GeoAcquirer."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+  "geoacquirer>=0.1.0",
+  "pydantic>=2.5", "shapely>=2.0", "geopandas>=0.14", "pyproj>=3.6", "networkx>=3.1",
+  "pandas>=2.0", "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4", "lightgbm>=4.0", "ortools>=9.9",
+  "duckdb>=1.0", "pyarrow>=14", "fastapi>=0.110", "uvicorn>=0.27", "requests>=2.31",
+  "matplotlib>=3.8",          # figures drawn by the analysis sandbox
+  "mapbox-vector-tile>=2.0",  # vector tiles served to the map
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+riyadhai = "riyadhai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+riyadhai = ["knowledge/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=.pytest_tmp -p no:cacheprovider"
+
+[tool.ruff]
+line-length = 200            # the code keeps related expressions on one line; formatting is not enforced
+target-version = "py311"
+extend-exclude = ["reference_notebooks", ".pytest_tmp"]
+
+[tool.ruff.lint]
+select = ["E9", "F", "B006", "B008", "E711", "E712", "E721", "E722"]   # real errors, unused code, mutable defaults, bare except

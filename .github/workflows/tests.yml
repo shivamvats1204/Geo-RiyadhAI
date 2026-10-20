@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install both packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e "./geoacquirer[dev,suhail]" -e "./geo-riyadh-ai[dev]" ruff
+      - name: Lint
+        run: |
+          ruff check geoacquirer
+          ruff check geo-riyadh-ai
+      - name: GeoAcquirer tests (offline)
+        run: cd geoacquirer && pytest -q
+      - name: Geo-RiyadhAI tests (offline, synthetic data)
+        run: cd geo-riyadh-ai && pytest -q

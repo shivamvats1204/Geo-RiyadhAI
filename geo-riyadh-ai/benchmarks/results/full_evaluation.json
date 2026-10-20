@@ -1,0 +1,4277 @@
+{
+ "areas": [
+  "airport",
+  "central_riyadh",
+  "north_riyadh",
+  "east_fringe"
+ ],
+ "catalogue": [
+  {
+   "area": "airport",
+   "case": "search_local_data",
+   "tool": "search_local_data",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "coverage",
+   "tool": "get_geographic_coverage",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "schema_poi",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": 233
+  },
+  {
+   "area": "airport",
+   "case": "schema_road",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": 634
+  },
+  {
+   "area": "airport",
+   "case": "filter_shops",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 12
+  },
+  {
+   "area": "airport",
+   "case": "filter_restaurants_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 2
+  },
+  {
+   "area": "airport",
+   "case": "filter_not_near_highway",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 12
+  },
+  {
+   "area": "airport",
+   "case": "filter_at_junction",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 5
+  },
+  {
+   "area": "airport",
+   "case": "filter_region_north",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 4
+  },
+  {
+   "area": "airport",
+   "case": "junctions_four_way",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 55
+  },
+  {
+   "area": "airport",
+   "case": "junctions_t",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 336
+  },
+  {
+   "area": "airport",
+   "case": "aggregate_poi_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "aggregate_poi_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "aggregate_parking_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "network_access_shops_to_parking",
+   "tool": "calculate_network_accessibility",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "suitability_supermarket",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 0.39,
+   "note": null,
+   "rows": 5
+  },
+  {
+   "area": "airport",
+   "case": "suitability_clinic_south",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 0.47,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "airport",
+   "case": "suitability_restaurant_weights",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 0.37,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "airport",
+   "case": "optimize_p_median",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 0.37,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "optimize_max_coverage",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 0.12,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "optimize_cap50",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 0.12,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "docs_zoning",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "docs_methods",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "aggregate_parcels_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "geoquery_commercial_parcels",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "airport",
+   "case": "aggregate_urbi_buildings_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "filter_near_metro",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 9
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find shops at crossroads but not near highways",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find restaurants near a mosque",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 2
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find clinics within 2 km road distance of hospital",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find pharmacies not within 200 metres of a hospita",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 1
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find parking facilities within 100 m of shops",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 20
+  },
+  {
+   "area": "airport",
+   "case": "geoquery: Find banks at T-junctions",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "airport",
+   "case": "followup_exclude_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "measure_proximity_parking",
+   "tool": "measure_proximity",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "export_csv",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.13,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "export_geojson",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 1.05,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "export_geoparquet",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "render_map_layer",
+   "tool": "render_map_layer",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "airport",
+   "case": "scenario_add_center",
+   "tool": "compare_scenarios",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "search_local_data",
+   "tool": "search_local_data",
+   "outcome": "OK",
+   "seconds": 3.08,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "coverage",
+   "tool": "get_geographic_coverage",
+   "outcome": "OK",
+   "seconds": 0.12,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "schema_poi",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 16169
+  },
+  {
+   "area": "central_riyadh",
+   "case": "schema_road",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 45796
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_shops",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 3306
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_restaurants_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": 143
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_not_near_highway",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.12,
+   "note": null,
+   "rows": 2726
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_at_junction",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.09,
+   "note": null,
+   "rows": 846
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_region_north",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 1696
+  },
+  {
+   "area": "central_riyadh",
+   "case": "junctions_four_way",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.09,
+   "note": null,
+   "rows": 4026
+  },
+  {
+   "area": "central_riyadh",
+   "case": "junctions_t",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.27,
+   "note": null,
+   "rows": 21917
+  },
+  {
+   "area": "central_riyadh",
+   "case": "aggregate_poi_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "aggregate_poi_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.1,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "aggregate_parking_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "network_access_shops_to_parking",
+   "tool": "calculate_network_accessibility",
+   "outcome": "OK",
+   "seconds": 1.29,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "suitability_supermarket",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 12.36,
+   "note": null,
+   "rows": 5
+  },
+  {
+   "area": "central_riyadh",
+   "case": "suitability_clinic_south",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 12.52,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "central_riyadh",
+   "case": "suitability_restaurant_weights",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 11.45,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "central_riyadh",
+   "case": "optimize_p_median",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 37.5,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "optimize_max_coverage",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 36.38,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "optimize_cap50",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 16.03,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "docs_zoning",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.05,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "docs_methods",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "aggregate_parcels_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.3,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery_commercial_parcels",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.25,
+   "note": null,
+   "rows": 82
+  },
+  {
+   "area": "central_riyadh",
+   "case": "aggregate_urbi_buildings_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.32,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "filter_near_metro",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.14,
+   "note": null,
+   "rows": 2649
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find shops at crossroads but not near highways",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.57,
+   "note": null,
+   "rows": 129
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find restaurants near a mosque",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.21,
+   "note": null,
+   "rows": 254
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find clinics within 2 km road distance of hospital",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 4.81,
+   "note": null,
+   "rows": 123
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find pharmacies not within 200 metres of a hospita",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.14,
+   "note": null,
+   "rows": 96
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find parking facilities within 100 m of shops",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 2.16,
+   "note": null,
+   "rows": 4487
+  },
+  {
+   "area": "central_riyadh",
+   "case": "geoquery: Find banks at T-junctions",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 62
+  },
+  {
+   "area": "central_riyadh",
+   "case": "followup_exclude_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "measure_proximity_parking",
+   "tool": "measure_proximity",
+   "outcome": "OK",
+   "seconds": 0.11,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "export_csv",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.21,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "export_geojson",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.25,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "export_geoparquet",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.1,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "render_map_layer",
+   "tool": "render_map_layer",
+   "outcome": "OK",
+   "seconds": 0.13,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "central_riyadh",
+   "case": "scenario_add_center",
+   "tool": "compare_scenarios",
+   "outcome": "OK",
+   "seconds": 2.56,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "search_local_data",
+   "tool": "search_local_data",
+   "outcome": "OK",
+   "seconds": 2.54,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "coverage",
+   "tool": "get_geographic_coverage",
+   "outcome": "OK",
+   "seconds": 0.17,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "schema_poi",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": 7139
+  },
+  {
+   "area": "north_riyadh",
+   "case": "schema_road",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 33791
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_shops",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 1126
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_restaurants_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 52
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_not_near_highway",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": 940
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_at_junction",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": 183
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_region_north",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": 57
+  },
+  {
+   "area": "north_riyadh",
+   "case": "junctions_four_way",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": 1701
+  },
+  {
+   "area": "north_riyadh",
+   "case": "junctions_t",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.19,
+   "note": null,
+   "rows": 18221
+  },
+  {
+   "area": "north_riyadh",
+   "case": "aggregate_poi_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "aggregate_poi_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.08,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "aggregate_parking_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "network_access_shops_to_parking",
+   "tool": "calculate_network_accessibility",
+   "outcome": "OK",
+   "seconds": 0.64,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "suitability_supermarket",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 14.68,
+   "note": null,
+   "rows": 5
+  },
+  {
+   "area": "north_riyadh",
+   "case": "suitability_clinic_south",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 11.38,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "north_riyadh",
+   "case": "suitability_restaurant_weights",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 12.9,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "north_riyadh",
+   "case": "optimize_p_median",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 18.58,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "optimize_max_coverage",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 18.71,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "optimize_cap50",
+   "tool": "optimize_facility_locations",
+   "outcome": "OK",
+   "seconds": 9.49,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "docs_zoning",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "docs_methods",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "aggregate_parcels_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.31,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery_commercial_parcels",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.19,
+   "note": null,
+   "rows": 91
+  },
+  {
+   "area": "north_riyadh",
+   "case": "aggregate_urbi_buildings_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.28,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "filter_near_metro",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": 517
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find shops at crossroads but not near highways",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.19,
+   "note": null,
+   "rows": 18
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find restaurants near a mosque",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.16,
+   "note": null,
+   "rows": 94
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find clinics within 2 km road distance of hospital",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 2.81,
+   "note": null,
+   "rows": 37
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find pharmacies not within 200 metres of a hospita",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": 104
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find parking facilities within 100 m of shops",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.53,
+   "note": null,
+   "rows": 1597
+  },
+  {
+   "area": "north_riyadh",
+   "case": "geoquery: Find banks at T-junctions",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.05,
+   "note": null,
+   "rows": 15
+  },
+  {
+   "area": "north_riyadh",
+   "case": "followup_exclude_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "measure_proximity_parking",
+   "tool": "measure_proximity",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "export_csv",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.07,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "export_geojson",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.13,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "export_geoparquet",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "render_map_layer",
+   "tool": "render_map_layer",
+   "outcome": "OK",
+   "seconds": 0.1,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "north_riyadh",
+   "case": "scenario_add_center",
+   "tool": "compare_scenarios",
+   "outcome": "OK",
+   "seconds": 1.9,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "search_local_data",
+   "tool": "search_local_data",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "coverage",
+   "tool": "get_geographic_coverage",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "schema_poi",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "schema_road",
+   "tool": "inspect_layer_schema",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": 20
+  },
+  {
+   "area": "east_fringe",
+   "case": "filter_shops",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "filter_restaurants_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "filter_not_near_highway",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "filter_at_junction",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "filter_region_north",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "junctions_four_way",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "junctions_t",
+   "tool": "find_intersections",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 15
+  },
+  {
+   "area": "east_fringe",
+   "case": "aggregate_poi_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.05,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "aggregate_poi_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.05,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "aggregate_parking_district",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.04,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "network_access_shops_to_parking",
+   "tool": "calculate_network_accessibility",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "suitability_supermarket",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 0.86,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "east_fringe",
+   "case": "suitability_clinic_south",
+   "tool": "rank_site_suitability",
+   "outcome": "REFUSED",
+   "seconds": 0.31,
+   "note": "no candidate survives the hard filters: {\"candidates\": 54, \"removed_highway_60m\": 0, \"removed_competitor_within_100m\": 0, \"removed_not_snapp",
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "suitability_restaurant_weights",
+   "tool": "rank_site_suitability",
+   "outcome": "OK",
+   "seconds": 0.59,
+   "note": null,
+   "rows": 3
+  },
+  {
+   "area": "east_fringe",
+   "case": "optimize_p_median",
+   "tool": "optimize_facility_locations",
+   "outcome": "REFUSED",
+   "seconds": 0.21,
+   "note": "no candidate cells or no demand points in the region",
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "optimize_max_coverage",
+   "tool": "optimize_facility_locations",
+   "outcome": "REFUSED",
+   "seconds": 0.14,
+   "note": "no candidate cells or no demand points in the region",
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "optimize_cap50",
+   "tool": "optimize_facility_locations",
+   "outcome": "REFUSED",
+   "seconds": 0.14,
+   "note": "no candidate cells or no demand points in the region",
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "docs_zoning",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "docs_methods",
+   "tool": "retrieve_reference_documents",
+   "outcome": "OK",
+   "seconds": 0.0,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "aggregate_urbi_buildings_grid",
+   "tool": "aggregate_spatial_statistics",
+   "outcome": "OK",
+   "seconds": 0.06,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find shops at crossroads but not near highways",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find restaurants near a mosque",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find clinics within 2 km road distance of hospital",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find pharmacies not within 200 metres of a hospita",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.03,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find parking facilities within 100 m of shops",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "geoquery: Find banks at T-junctions",
+   "tool": "run_geoquery",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": 0
+  },
+  {
+   "area": "east_fringe",
+   "case": "followup_exclude_near_mosque",
+   "tool": "filter_features",
+   "outcome": "OK",
+   "seconds": 0.02,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "measure_proximity_parking",
+   "tool": "measure_proximity",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "export_csv",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "export_geojson",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "export_geoparquet",
+   "tool": "export_dataset",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "render_map_layer",
+   "tool": "render_map_layer",
+   "outcome": "OK",
+   "seconds": 0.01,
+   "note": null,
+   "rows": null
+  },
+  {
+   "area": "east_fringe",
+   "case": "scenario_add_center",
+   "tool": "compare_scenarios",
+   "outcome": "REFUSED",
+   "seconds": 0.02,
+   "note": "scenario 'add': no demand points could be snapped to the road network, so accessibility before/after is undefined for this area",
+   "rows": null
+  }
+ ],
+ "edge": [
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown tool",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown tool 'nope'"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown layer",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "\"layer 'does_not_exist' not available for area 'airport'; available: ['attraction', 'building', 'district', 'excluded_crossings', 'junction'"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "extra argument",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nbogus\n  Extra inputs are not permitted [type=extra_forbidden, input"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "wrong type k",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be a valid integer, unable to parse string as "
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "k=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "k=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be less than or equal to 20 [type=less_than_eq"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "p=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be greater than or equal to 1 [type=great"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "p=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be less than or equal to 20 [type=less_th"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "negative distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "zero distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "huge distance 1e9",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "NaN distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "inf distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "all-zero weights",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "weights must sum to a positive value (all criteria are zero)"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "negative weight",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown criterion",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown facility",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nfacility\n  Input should be 'supermarket', 'retail', 'clinic' or"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown category term",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown category terms ['zzzqqq']"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "limit=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "limit huge",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be less than or equal to 200000 [type=less_tha"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "None args",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\n  Input should be a valid dictionary or instance of FilterArgs [typ"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "scenarios=9 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for compare_scenarios: 1 validation error for ScenArgs\nscenarios\n  List should have at most 8 items after validation, not "
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "scenario unknown op",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "scenario 'x': unsupported operation 'teleport'; supported: ['add_facility', 'remove_connector', 'remove_facility', 'remove_segment', 'set_ca"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "scenario close missing connector",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "scenario 'x': connector nope is not in the road graph"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "scenario with no operations",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.05,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "scenario facility far outside area",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "export unsupported format",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for export_dataset: 1 validation error for ExportArgs\nformat\n  Input should be 'csv', 'geojson' or 'geoparquet' [type=lite"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "unknown result id",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown result set 'does-not-exist"
+  },
+  {
+   "area": "airport",
+   "group": "args",
+   "case": "measure_proximity bad name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for measure_proximity: 1 validation error for ProxArgs\nname\n  String should match pattern '^[a-z][a-z0-9_]{0,24}$' [type=s"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "region bbox outside area",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "region bbox inverted",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "region bbox zero size",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "unknown district",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "no district matching 'Atlantis'; examples: \u0636\u0627\u062d\u064a\u0629 \u062e\u0632\u0627\u0645, \u0627\u0644\u0646\u0631\u062c\u0633, \u0628\u0644\u062f\u064a\u0629 \u0627\u0644\u0631\u0648\u0636\u0629"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "district without name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "district empty string",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "acquisition bbox too large",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "requested bbox is larger than the 0.1 deg2 acquisition budget"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "acquisition needs approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 1.0,
+   "note": "needs approval: layers ['poi', 'road', 'connector', 'building'] are not cached; live acquisition"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "suitability tiny region",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "no candidate survives the hard filters: {\"candidates\": 0, \"removed_highway_60m\": 0, \"removed_competitor_within_100m\": 0, \"removed_not_snappa"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "optimize no demand categories match",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": "no candidate cells or no demand points in the region"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "optimize p larger than candidates",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "no candidate cells or no demand points in the region"
+  },
+  {
+   "area": "airport",
+   "group": "geo",
+   "case": "train model without approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "needs approval: training runs LightGBM with spatial cross-validation (about 30-110 s)"
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: empty",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: whitespace",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: very long (5000 chars)",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: sql injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: prompt injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: arabic only",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: emoji",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.04,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: mixed ar/en",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: non-geographic",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: contradictory",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: only a number",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: nonsense",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: negated everything",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: unit missing",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: huge distance",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: forecast",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: quality",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: route",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "planner",
+   "case": "NL: population",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "followup",
+   "case": "follow-up with no previous result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "followup",
+   "case": "follow-up on empty/near-empty result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown tool",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown tool 'nope'"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown layer",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "\"layer 'does_not_exist' not available for area 'central_riyadh'; available: ['attraction', 'building', 'district', 'excluded_crossings', 'ju"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "extra argument",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nbogus\n  Extra inputs are not permitted [type=extra_forbidden, input"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "wrong type k",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be a valid integer, unable to parse string as "
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "k=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "k=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be less than or equal to 20 [type=less_than_eq"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "p=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be greater than or equal to 1 [type=great"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "p=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be less than or equal to 20 [type=less_th"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "negative distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "zero distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "huge distance 1e9",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "NaN distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "inf distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "all-zero weights",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": "weights must sum to a positive value (all criteria are zero)"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "negative weight",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown criterion",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown facility",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nfacility\n  Input should be 'supermarket', 'retail', 'clinic' or"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown category term",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "unknown category terms ['zzzqqq']"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "limit=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "limit huge",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be less than or equal to 200000 [type=less_tha"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "None args",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\n  Input should be a valid dictionary or instance of FilterArgs [typ"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "scenarios=9 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for compare_scenarios: 1 validation error for ScenArgs\nscenarios\n  List should have at most 8 items after validation, not "
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "scenario unknown op",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.06,
+   "note": "scenario 'x': unsupported operation 'teleport'; supported: ['add_facility', 'remove_connector', 'remove_facility', 'remove_segment', 'set_ca"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "scenario close missing connector",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.44,
+   "note": "scenario 'x': connector nope is not in the road graph"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "scenario with no operations",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 1.79,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "scenario facility far outside area",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 2.02,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "export unsupported format",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for export_dataset: 1 validation error for ExportArgs\nformat\n  Input should be 'csv', 'geojson' or 'geoparquet' [type=lite"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "unknown result id",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown result set 'does-not-exist"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "args",
+   "case": "measure_proximity bad name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for measure_proximity: 1 validation error for ProxArgs\nname\n  String should match pattern '^[a-z][a-z0-9_]{0,24}$' [type=s"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "region bbox outside area",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "region bbox inverted",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.11,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "region bbox zero size",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "unknown district",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "no district matching 'Atlantis'; examples: \u0628\u0644\u062f\u064a\u0629 \u0639\u0631\u0642\u0629, \u0648\u0627\u062f\u064a \u0644\u0628\u0646, \u0638\u0647\u0631\u0629 \u0644\u0628\u0646, \u0628\u0644\u062f\u064a\u0629 \u0627\u0644\u0639\u0631\u064a\u062c\u0627\u0621, \u0627\u0644\u0631\u0627\u0626\u062f, \u0628\u0644\u062f\u064a\u0629 \u0627\u0644\u0645\u0639\u0630\u0631, \u0627\u0644\u0639\u0642\u064a\u0642, \u0627\u0644\u0635\u062d\u0627\u0641\u0629"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "district without name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "district empty string",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "acquisition bbox too large",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "requested bbox is larger than the 0.1 deg2 acquisition budget"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "acquisition needs approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.9,
+   "note": "needs approval: layers ['poi', 'road', 'connector', 'building'] are not cached; live acquisition"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "suitability tiny region",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.11,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "optimize no demand categories match",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 30.12,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "optimize p larger than candidates",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": "no candidate cells or no demand points in the region"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "geo",
+   "case": "train model without approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "needs approval: training runs LightGBM with spatial cross-validation (about 30-110 s)"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: empty",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: whitespace",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: very long (5000 chars)",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: sql injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: prompt injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.17,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: arabic only",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: emoji",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.75,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: mixed ar/en",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.24,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: non-geographic",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: contradictory",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.17,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: only a number",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: nonsense",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: negated everything",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.1,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: unit missing",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.16,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: huge distance",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: forecast",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: quality",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: route",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "planner",
+   "case": "NL: population",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "followup",
+   "case": "follow-up with no previous result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": null
+  },
+  {
+   "area": "central_riyadh",
+   "group": "followup",
+   "case": "follow-up on empty/near-empty result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.11,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown tool",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown tool 'nope'"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown layer",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "\"layer 'does_not_exist' not available for area 'north_riyadh'; available: ['attraction', 'building', 'district', 'excluded_crossings', 'junc"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "extra argument",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nbogus\n  Extra inputs are not permitted [type=extra_forbidden, input"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "wrong type k",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be a valid integer, unable to parse string as "
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "k=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "k=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be less than or equal to 20 [type=less_than_eq"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "p=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be greater than or equal to 1 [type=great"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "p=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be less than or equal to 20 [type=less_th"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "negative distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "zero distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "huge distance 1e9",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "NaN distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "inf distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "all-zero weights",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "weights must sum to a positive value (all criteria are zero)"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "negative weight",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown criterion",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown facility",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nfacility\n  Input should be 'supermarket', 'retail', 'clinic' or"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown category term",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown category terms ['zzzqqq']"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "limit=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "limit huge",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be less than or equal to 200000 [type=less_tha"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "None args",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\n  Input should be a valid dictionary or instance of FilterArgs [typ"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "scenarios=9 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for compare_scenarios: 1 validation error for ScenArgs\nscenarios\n  List should have at most 8 items after validation, not "
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "scenario unknown op",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": "scenario 'x': unsupported operation 'teleport'; supported: ['add_facility', 'remove_connector', 'remove_facility', 'remove_segment', 'set_ca"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "scenario close missing connector",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.45,
+   "note": "scenario 'x': connector nope is not in the road graph"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "scenario with no operations",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 2.9,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "scenario facility far outside area",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 1.75,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "export unsupported format",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for export_dataset: 1 validation error for ExportArgs\nformat\n  Input should be 'csv', 'geojson' or 'geoparquet' [type=lite"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "unknown result id",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown result set 'does-not-exist"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "args",
+   "case": "measure_proximity bad name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for measure_proximity: 1 validation error for ProxArgs\nname\n  String should match pattern '^[a-z][a-z0-9_]{0,24}$' [type=s"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "region bbox outside area",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "region bbox inverted",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.14,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "region bbox zero size",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "unknown district",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "no district matching 'Atlantis'; examples: \u0627\u0644\u0642\u064a\u0631\u0648\u0627\u0646, \u0627\u0644\u0639\u0642\u064a\u0642, \u0627\u0644\u0635\u062d\u0627\u0641\u0629, \u0628\u0644\u062f\u064a\u0629 \u0627\u0644\u0634\u0645\u0627\u0644, \u0627\u0644\u064a\u0627\u0633\u0645\u064a\u0646, \u0627\u0644\u0631\u0628\u064a\u0639, \u0627\u0644\u063a\u062f\u064a\u0631, \u0636\u0627\u062d\u064a\u0629 \u062e\u0632\u0627\u0645"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "district without name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "district empty string",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "acquisition bbox too large",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "requested bbox is larger than the 0.1 deg2 acquisition budget"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "acquisition needs approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 1.17,
+   "note": "needs approval: layers ['poi', 'road', 'connector', 'building'] are not cached; live acquisition"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "suitability tiny region",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.2,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "optimize no demand categories match",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 21.81,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "optimize p larger than candidates",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 10.27,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "geo",
+   "case": "train model without approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "needs approval: training runs LightGBM with spatial cross-validation (about 30-110 s)"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: empty",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: whitespace",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: very long (5000 chars)",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: sql injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.05,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: prompt injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: arabic only",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: emoji",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.29,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: mixed ar/en",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.11,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: non-geographic",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: contradictory",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.08,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: only a number",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: nonsense",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: negated everything",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.06,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: unit missing",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.09,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: huge distance",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: forecast",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: quality",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: route",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "planner",
+   "case": "NL: population",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "followup",
+   "case": "follow-up with no previous result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.04,
+   "note": null
+  },
+  {
+   "area": "north_riyadh",
+   "group": "followup",
+   "case": "follow-up on empty/near-empty result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.07,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown tool",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown tool 'nope'"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown layer",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "\"layer 'does_not_exist' not available for area 'east_fringe'; available: ['building', 'district', 'excluded_crossings', 'junction', 'parking"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "extra argument",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nbogus\n  Extra inputs are not permitted [type=extra_forbidden, input"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "wrong type k",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be a valid integer, unable to parse string as "
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "k=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "k=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nk\n  Input should be less than or equal to 20 [type=less_than_eq"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "p=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be greater than or equal to 1 [type=great"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "p=21 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for optimize_facility_locations: 1 validation error for OptArgs\np\n  Input should be less than or equal to 20 [type=less_th"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "negative distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "zero distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be greater than 0 [type=greater_th"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "huge distance 1e9",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "NaN distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "inf distance",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nnear.0.distance_m\n  Input should be less than or equal to 20000 [ty"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "all-zero weights",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "weights must sum to a positive value (all criteria are zero)"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "negative weight",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown criterion",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nweights\n  Value error, weights must be non-negative and keys in"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown facility",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for rank_site_suitability: 1 validation error for SuitArgs\nfacility\n  Input should be 'supermarket', 'retail', 'clinic' or"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown category term",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "unknown category terms ['zzzqqq']"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "limit=0",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be greater than or equal to 1 [type=greater_th"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "limit huge",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\nlimit\n  Input should be less than or equal to 200000 [type=less_tha"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "None args",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for filter_features: 1 validation error for FilterArgs\n  Input should be a valid dictionary or instance of FilterArgs [typ"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "scenarios=9 (above max)",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for compare_scenarios: 1 validation error for ScenArgs\nscenarios\n  List should have at most 8 items after validation, not "
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "scenario unknown op",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "scenario 'x': unsupported operation 'teleport'; supported: ['add_facility', 'remove_connector', 'remove_facility', 'remove_segment', 'set_ca"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "scenario close missing connector",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "scenario 'x': connector nope is not in the road graph"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "scenario with no operations",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "scenario 'noop': no demand points could be snapped to the road network, so accessibility before/after is undefined for this area"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "scenario facility far outside area",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "scenario 'far': no demand points could be snapped to the road network, so accessibility before/after is undefined for this area"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "export unsupported format",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for export_dataset: 1 validation error for ExportArgs\nformat\n  Input should be 'csv', 'geojson' or 'geoparquet' [type=lite"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "unknown result id",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "unknown result set 'does-not-exist"
+  },
+  {
+   "area": "east_fringe",
+   "group": "args",
+   "case": "measure_proximity bad name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "invalid arguments for measure_proximity: 1 validation error for ProxArgs\nname\n  String should match pattern '^[a-z][a-z0-9_]{0,24}$' [type=s"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "region bbox outside area",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "region bbox inverted",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "region bbox zero size",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "that box does not intersect the selected area"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "unknown district",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "no district matching 'Atlantis'; examples: "
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "district without name",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "district empty string",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "district region needs a district name and a district layer"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "acquisition bbox too large",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "requested bbox is larger than the 0.1 deg2 acquisition budget"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "acquisition needs approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 1.05,
+   "note": "needs approval: layers ['poi', 'road', 'connector', 'building'] are not cached; live acquisition"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "suitability tiny region",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "no candidate survives the hard filters: {\"candidates\": 0, \"removed_highway_60m\": 0, \"removed_competitor_within_100m\": 0, \"removed_not_snappa"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "optimize no demand categories match",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.2,
+   "note": "no candidate cells or no demand points in the region"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "optimize p larger than candidates",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": "no candidate cells or no demand points in the region"
+  },
+  {
+   "area": "east_fringe",
+   "group": "geo",
+   "case": "train model without approval",
+   "outcome": "REFUSED",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": "needs approval: training runs LightGBM with spatial cross-validation (about 30-110 s)"
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: empty",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: whitespace",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: very long (5000 chars)",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: sql injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: prompt injection",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: arabic only",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: emoji",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: mixed ar/en",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: non-geographic",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: contradictory",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: only a number",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: nonsense",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: negated everything",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: unit missing",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: huge distance",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: forecast",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: quality",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: route",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "planner",
+   "case": "NL: population",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "followup",
+   "case": "follow-up with no previous result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "east_fringe",
+   "group": "followup",
+   "case": "follow-up on empty/near-empty result",
+   "outcome": "OK",
+   "verdict": "PASS",
+   "seconds": 0.03,
+   "note": null
+  }
+ ],
+ "http": [
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "health",
+   "outcome": "HTTP 200",
+   "verdict": "PASS",
+   "seconds": 0.99,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "areas list",
+   "outcome": "HTTP 200",
+   "verdict": "PASS",
+   "seconds": 2.75,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "switch to unknown area",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "switch area with missing name",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer unknown",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer bad bbox",
+   "outcome": "HTTP 400",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer short bbox",
+   "outcome": "HTTP 400",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer limit=0",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer limit huge",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "layer valid",
+   "outcome": "HTTP 200",
+   "verdict": "PASS",
+   "seconds": 0.02,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "ask missing body",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "ask empty question",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "ask too long",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "ask wrong type",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "job unknown",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "approve unknown job",
+   "outcome": "HTTP 409",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "result unknown geojson",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "result unknown csv",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.0,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "lineage unknown",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "report unknown",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "tool unknown",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "tool bad args",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "tool missing field",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "rag short query",
+   "outcome": "HTTP 422",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "rag normal",
+   "outcome": "HTTP 200",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "path traversal in report id",
+   "outcome": "HTTP 404",
+   "verdict": "PASS",
+   "seconds": 0.01,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "http",
+   "case": "static index",
+   "outcome": "HTTP 200",
+   "verdict": "PASS",
+   "seconds": 0.21,
+   "note": null
+  },
+  {
+   "area": "airport",
+   "group": "concurrency",
+   "case": "5 simultaneous asks",
+   "outcome": "{\"c2a107788a\": \"done\", \"1ccab61f68\": \"done\", \"949dc11688\": \"done\", \"02d527b471\": \"done\", \"c7a89ff807\": \"done\"}",
+   "verdict": "PASS",
+   "seconds": 0.8,
+   "note": null
+  }
+ ],
+ "data": [
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "poi has points only",
+   "verdict": "PASS",
+   "note": "{'Point'}"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "no empty/NaN geometries in any layer",
+   "verdict": "PASS",
+   "note": "checked all layers"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "parcel: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 74"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "urbi_building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 517"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 204"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "street: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 2"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "parking: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 114"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "poi names: NaN handled (share missing)",
+   "verdict": "PASS",
+   "note": "0.000 of POI names are missing"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "junction topology has four-way junctions or area is tiny",
+   "verdict": "PASS",
+   "note": "{'t_junction': 336, 'four_way': 55, 'other': 52, 'highway_interchange': 21, 'complex': 7}"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "road network connected share >= 0.5",
+   "verdict": "PASS",
+   "note": "{'components': 26, 'largest_component_nodes': 698, 'share_in_largest': 0.7418}"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "district layer present",
+   "verdict": "PASS",
+   "note": "3"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "parcel layer present",
+   "verdict": "PASS",
+   "note": "74 parcels"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "urbi buildings present",
+   "verdict": "PASS",
+   "note": "517"
+  },
+  {
+   "area": "airport",
+   "group": "data",
+   "case": "parcel landuse classes populated",
+   "verdict": "PASS",
+   "note": "{'unknown': 71, 'other': 3}"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "poi has points only",
+   "verdict": "PASS",
+   "note": "{'Point'}"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "no empty/NaN geometries in any layer",
+   "verdict": "PASS",
+   "note": "checked all layers"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "parcel: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 94761"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "urbi_building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 102137"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 87092"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "street: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 7230"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "parking: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 8204"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "poi names: NaN handled (share missing)",
+   "verdict": "PASS",
+   "note": "0.000 of POI names are missing"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "junction topology has four-way junctions or area is tiny",
+   "verdict": "PASS",
+   "note": "{'t_junction': 21917, 'four_way': 4027, 'other': 2135, 'highway_interchange': 370, 'complex': 150}"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "road network connected share >= 0.5",
+   "verdict": "PASS",
+   "note": "{'components': 193, 'largest_component_nodes': 41035, 'share_in_largest': 0.984}"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "district layer present",
+   "verdict": "PASS",
+   "note": "62"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "parcel layer present",
+   "verdict": "PASS",
+   "note": "94761 parcels"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "urbi buildings present",
+   "verdict": "PASS",
+   "note": "102137"
+  },
+  {
+   "area": "central_riyadh",
+   "group": "data",
+   "case": "parcel landuse classes populated",
+   "verdict": "PASS",
+   "note": "{'residential': 73910, 'unknown': 9672, 'mixed': 8722, 'other': 2233, 'commercial': 153, 'industrial': 71}"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "poi has points only",
+   "verdict": "PASS",
+   "note": "{'Point'}"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "no empty/NaN geometries in any layer",
+   "verdict": "PASS",
+   "note": "checked all layers"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "parcel: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 145693"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "urbi_building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 113280"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 83724"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "street: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 7104"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "parking: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 5764"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "poi names: NaN handled (share missing)",
+   "verdict": "PASS",
+   "note": "0.000 of POI names are missing"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "junction topology has four-way junctions or area is tiny",
+   "verdict": "PASS",
+   "note": "{'t_junction': 18230, 'four_way': 1701, 'other': 1460, 'highway_interchange': 220, 'complex': 67}"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "road network connected share >= 0.5",
+   "verdict": "PASS",
+   "note": "{'components': 117, 'largest_component_nodes': 28448, 'share_in_largest': 0.9806}"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "district layer present",
+   "verdict": "PASS",
+   "note": "25"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "parcel layer present",
+   "verdict": "PASS",
+   "note": "145693 parcels"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "urbi buildings present",
+   "verdict": "PASS",
+   "note": "113280"
+  },
+  {
+   "area": "north_riyadh",
+   "group": "data",
+   "case": "parcel landuse classes populated",
+   "verdict": "PASS",
+   "note": "{'residential': 124270, 'unknown': 14750, 'mixed': 5410, 'other': 1099, 'commercial': 164}"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "poi has points only",
+   "verdict": "PASS",
+   "note": "set()"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "no empty/NaN geometries in any layer",
+   "verdict": "PASS",
+   "note": "checked all layers"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "urbi_building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 16"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "building: valid geometries",
+   "verdict": "PASS",
+   "note": "0 invalid of 64"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "poi names: NaN handled (share missing)",
+   "verdict": "PASS",
+   "note": "nan of POI names are missing"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "junction topology has four-way junctions or area is tiny",
+   "verdict": "PASS",
+   "note": "{'t_junction': 15}"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "road network connected share >= 0.5",
+   "verdict": "FAIL",
+   "note": "{'components': 3, 'largest_component_nodes': 28, 'share_in_largest': 0.4516}"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "district layer present",
+   "verdict": "FAIL",
+   "note": "0"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "parcel layer present",
+   "verdict": "FAIL",
+   "note": "0 parcels"
+  },
+  {
+   "area": "east_fringe",
+   "group": "data",
+   "case": "urbi buildings present",
+   "verdict": "PASS",
+   "note": "16"
+  }
+ ]
+}

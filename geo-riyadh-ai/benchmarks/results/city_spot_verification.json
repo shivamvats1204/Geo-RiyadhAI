@@ -1,0 +1,434 @@
+[
+ {
+  "spot": {
+   "how": "random building",
+   "lon": 47.571313,
+   "lat": 24.511875500000002
+  },
+  "bbox": [
+   47.569832,
+   24.510522,
+   47.572794,
+   24.513229
+  ],
+  "buildings": {
+   "raw_records": 1,
+   "store": 1,
+   "in_served_tiles": 1,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 4,
+   "store_minus_raw_edge_features": 0,
+   "geometry": {
+    "polygons": 1,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 0,
+   "fresh_suhail_tile": 1,
+   "fresh_not_in_store": 1,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 4,
+   "urbi_buildings": 1,
+   "urbi_matched_by_overture": 1,
+   "overture_matched_by_urbi": 1
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random building",
+   "lon": 47.52536145754716,
+   "lat": 24.196707500000002
+  },
+  "bbox": [
+   47.523884,
+   24.195354,
+   47.526839,
+   24.198061
+  ],
+  "buildings": {
+   "raw_records": 18,
+   "store": 22,
+   "in_served_tiles": 22,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 106,
+   "store_minus_raw_edge_features": 4,
+   "geometry": {
+    "polygons": 22,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 0,
+   "fresh_suhail_tile": 0,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 24,
+   "urbi_buildings": 22,
+   "urbi_matched_by_overture": 6,
+   "overture_matched_by_urbi": 6
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random building",
+   "lon": 47.67091523046875,
+   "lat": 25.1163275
+  },
+  "bbox": [
+   47.669427,
+   25.114974,
+   47.672403,
+   25.117681
+  ],
+  "buildings": {
+   "raw_records": 1,
+   "store": 1,
+   "in_served_tiles": 1,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 16,
+   "store_minus_raw_edge_features": 0,
+   "geometry": {
+    "polygons": 1,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 0,
+   "fresh_suhail_tile": 0,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 1,
+   "urbi_buildings": 1,
+   "urbi_matched_by_overture": 1,
+   "overture_matched_by_urbi": 1
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 1,
+   "in_served_tiles": 1
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random building",
+   "lon": 46.3908865,
+   "lat": 24.373905999999998
+  },
+  "bbox": [
+   46.389407,
+   24.372552,
+   46.392366,
+   24.37526
+  ],
+  "buildings": {
+   "raw_records": 5,
+   "store": 5,
+   "in_served_tiles": 5,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 65,
+   "store_minus_raw_edge_features": 0,
+   "geometry": {
+    "polygons": 5,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 0,
+   "fresh_suhail_tile": 0,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 5,
+   "urbi_buildings": 5,
+   "urbi_matched_by_overture": 2,
+   "overture_matched_by_urbi": 2
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random point in district North Mathar",
+   "lon": 46.66444541432918,
+   "lat": 24.693627866190074
+  },
+  "bbox": [
+   46.662962,
+   24.692274,
+   46.665929,
+   24.694982
+  ],
+  "buildings": {
+   "raw_records": 73,
+   "store": 83,
+   "in_served_tiles": 83,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 4125,
+   "store_minus_raw_edge_features": 10,
+   "geometry": {
+    "polygons": 83,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 76,
+   "fresh_suhail_tile": 76,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 43,
+   "urbi_buildings": 83,
+   "urbi_matched_by_overture": 81,
+   "overture_matched_by_urbi": 41
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 15,
+   "in_served_tiles": 15
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random point in district Al Uthmaniyah",
+   "lon": 46.52744523797421,
+   "lat": 23.629386067839828
+  },
+  "bbox": [
+   46.525974,
+   23.628032,
+   46.528916,
+   23.63074
+  ],
+  "buildings": {
+   "raw_records": 0,
+   "store": 0,
+   "in_served_tiles": 0,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 0,
+   "store_minus_raw_edge_features": 0,
+   "geometry": {
+    "polygons": 0,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 0,
+   "fresh_suhail_tile": 15,
+   "fresh_not_in_store": 15,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 13,
+   "urbi_buildings": 0,
+   "urbi_matched_by_overture": null,
+   "overture_matched_by_urbi": null
+  },
+  "urbi_parking": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "street": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "attraction": {
+   "store": 0,
+   "in_served_tiles": 0
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random point in district Al Salam",
+   "lon": 46.80994370834741,
+   "lat": 24.701068364183527
+  },
+  "bbox": [
+   46.808461,
+   24.699715,
+   46.811427,
+   24.702422
+  ],
+  "buildings": {
+   "raw_records": 109,
+   "store": 120,
+   "in_served_tiles": 120,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 4689,
+   "store_minus_raw_edge_features": 11,
+   "geometry": {
+    "polygons": 120,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 127,
+   "fresh_suhail_tile": 127,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 151,
+   "urbi_buildings": 120,
+   "urbi_matched_by_overture": 119,
+   "overture_matched_by_urbi": 127
+  },
+  "urbi_parking": {
+   "store": 10,
+   "in_served_tiles": 10
+  },
+  "street": {
+   "store": 18,
+   "in_served_tiles": 18
+  },
+  "attraction": {
+   "store": 1,
+   "in_served_tiles": 1
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ },
+ {
+  "spot": {
+   "how": "random point in district Al Taawun",
+   "lon": 46.706958309380006,
+   "lat": 24.771748661046658
+  },
+  "bbox": [
+   46.705474,
+   24.770395,
+   46.708442,
+   24.773102
+  ],
+  "buildings": {
+   "raw_records": 53,
+   "store": 67,
+   "in_served_tiles": 67,
+   "raw_not_in_store": 0,
+   "store_missing_from_tiles": 0,
+   "tiles_not_in_store": 3896,
+   "store_minus_raw_edge_features": 14,
+   "geometry": {
+    "polygons": 67,
+    "points": 0
+   }
+  },
+  "parcels": {
+   "store": 75,
+   "fresh_suhail_tile": 75,
+   "fresh_not_in_store": 0,
+   "store_not_in_fresh": 0
+  },
+  "overture": {
+   "overture_buildings": 57,
+   "urbi_buildings": 67,
+   "urbi_matched_by_overture": 55,
+   "overture_matched_by_urbi": 49
+  },
+  "urbi_parking": {
+   "store": 14,
+   "in_served_tiles": 14
+  },
+  "street": {
+   "store": 11,
+   "in_served_tiles": 11
+  },
+  "attraction": {
+   "store": 1,
+   "in_served_tiles": 1
+  },
+  "metro": {
+   "store": 0,
+   "in_served_tiles": 0
+  }
+ }
+]

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geo-RiyadhAI</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<header>
+  <b>Geo-RiyadhAI</b> <span class="muted hide-sm">ask questions about any district of Riyadh</span>
+  <span id="scopeChip" class="chip" title="Everything you ask is answered for this area">Area: map view</span>
+  <span id="badge" class="badge">loading…</span>
+  <span class="grow"></span>
+  <a href="#" id="helpLink">How it works</a>
+</header>
+<main>
+  <aside id="left">
+    <h3>1 · What do you want to know?</h3>
+    <div id="taskCards"></div>
+    <textarea id="q" rows="3" placeholder="…or type your own question, e.g. “Where is the best place for a pharmacy?”"></textarea>
+    <label class="small muted">How to answer: <select id="mode" title="Quick tools use built-in analyses. Custom analysis writes and runs code on the data.">
+      <option value="auto">Automatic (recommended)</option><option value="tools">Quick tools only</option><option value="code">Custom analysis (writes and runs code)</option></select></label>
+    <div class="row"><button id="askBtn">Get answer</button><button id="clearBtn" class="ghost">Start over</button></div>
+    <div id="progress" class="small muted"></div>
+
+    <h3>2 · Where?</h3>
+    <div class="muted small" id="whereHint">Pick a district or neighbourhood. Answers are limited to it. With none picked, the area on the map is used.</div>
+    <select id="partition" title="how to divide the city">
+      <option value="d">Districts (Urbi)</option>
+      <option value="n">Neighbourhoods (Suhail)</option>
+      <option value="o">Neighbourhoods (Overture)</option>
+    </select>
+    <input id="search" placeholder="search a district / neighbourhood…" autocomplete="off">
+    <div id="distList"></div>
+    <div class="row"><button id="mapViewBtn" class="ghost">Use the map view</button></div>
+
+    <details><summary>Fine-tune what matters (site ranking)</summary>
+      <div class="muted small">Move a slider to say how much each thing matters when ranking places for a new shop.</div>
+      <div id="weights"></div>
+      <button id="rerank">Re-rank with my choices</button>
+    </details>
+    <details><summary>Try a what-if: add parking</summary>
+      <div class="row"><button id="addFac" class="ghost">Click the map to add a parking lot</button></div>
+      <ul id="ops" class="links"></ul>
+      <button id="simulate">Simulate</button>
+    </details>
+    <details><summary>Saved questions</summary><ul id="saved" class="links"></ul></details>
+  </aside>
+
+  <section id="mapwrap">
+    <div id="map"></div>
+    <div id="layerBar">
+      <button id="layersBtn" class="ghost" aria-expanded="false">▦ Layers ▾</button>
+      <span id="layerChips"></span>
+      <div id="layerPanel" hidden>
+        <div class="cols">
+          <div><h3>Boundaries</h3><div id="boundToggles"></div></div>
+          <div><h3>Data</h3><div id="dataToggles"></div>
+            <div class="tog"><input type="checkbox" id="osm" checked><label for="osm">Street map underneath</label></div>
+            <div class="tog"><input type="checkbox" id="byType"><label for="byType">Colour buildings by use</label></div>
+          </div>
+        </div>
+        <div class="muted small" id="zoomHint"></div>
+        <button id="verifyBtn" class="ghost small">Check this view against the stored data</button>
+        <div id="verifyOut" class="small"></div>
+      </div>
+    </div>
+  </section>
+
+  <aside id="right">
+    <div id="selected" hidden></div>
+    <div id="answerWrap">
+      <div id="answer" class="muted">Choose a question on the left, or type your own. The answer appears here in plain words, with the places on the map.</div>
+    </div>
+    <div id="tables"></div>
+    <div id="downloads"></div>
+    <details id="techBox" hidden><summary>Technical details (how every number was computed)</summary><div id="tech"></div></details>
+    <div id="coverage" class="small muted"></div>
+  </aside>
+</main>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js?v=7"></script>
+</body>
+</html>
